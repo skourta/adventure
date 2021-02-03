@@ -1,0 +1,46 @@
+.hero {
+  min-height: 80vh;
+
+  background: rgba(#000000, 0.5) url("./assets/background.png");
+  background-size: cover;
+  background-blend-mode: color-dodge;
+
+  .hero__container {
+    margin-top: 10vh;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  // .hero__title {
+  //   font-size: 3rem;
+  // }
+
+  .hero__button {
+    width: fit-content;
+  }
+}
+
+.dropdown-menu-dark {
+  background: rgba(#000000, 0.9);
+}
+#search-input {
+  background: rgba(#ffffff, 0.1);
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    .hero__container {
+      margin-top: 10vh;
+      width: 60%;
+      margin-left: 5vw;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .hero__title {
+      font-size: 3rem;
+    }
+  }
+}

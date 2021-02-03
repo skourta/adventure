@@ -1,0 +1,42 @@
+.hero {
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.5) url("./assets/background.png");
+  background-size: cover;
+  background-blend-mode: color-dodge;
+}
+
+.hero .hero__container {
+  margin-top: 10vh;
+  padding: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.hero .hero__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.dropdown-menu-dark {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#search-input {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .hero .hero__container {
+    margin-top: 10vh;
+    width: 60%;
+    margin-left: 5vw;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .hero .hero__title {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
