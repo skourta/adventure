@@ -117,6 +117,120 @@
           >
         </div>
       </div>
+      <div class="card filters">
+        <div class="card-body">
+          <h5 class="card-title mb-5">Search for your destination</h5>
+          <div class="filters__row d-flex gap-2 flex-column">
+            <div class="dropdown select-material">
+              <button
+                class="btn btn-outline-dark dropdown-toggle w-100"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="select-material__placeholder">Location</div>
+                <span id="location_value">Italia</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Choose a location</h6></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="chooseLocation('Italia')"
+                    >Italia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="chooseLocation('Germany')"
+                    >Germany</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="chooseLocation('France')"
+                    >France</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="chooseLocation('Canada')"
+                    >Canada</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="chooseLocation('Australia')"
+                    >Australia</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="select-material">
+              <button
+                class="btn btn-outline-dark dropdown-toggle w-100"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="select-material__placeholder">Date</div>
+                <span id="range_value" class="fw-bold">Tue, 3 Nov </span>
+              </button>
+            </div>
+            <div class="dropdown select-material">
+              <button
+                class="btn btn-outline-dark dropdown-toggle w-100"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="select-material__placeholder">Average Price</div>
+                <span id="range_value" class="fw-bold">$400 - $600</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Choose a range</h6></li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="chooseRange(this)"
+                    >$200 - $600</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="chooseRange(this)"
+                    >$400 - $600</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="chooseRange(this)"
+                    >$600 - $800</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="chooseRange(this)"
+                    >$800 - $1000</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="chooseRange(this)"
+                    >> $1000</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script
@@ -124,5 +238,17 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function chooseLocation(item) {
+        const location = document.getElementById("location_value");
+        location.innerHTML = item;
+      }
+
+      function chooseRange(item) {
+        const location = document.getElementById("range_value");
+        location.innerHTML = item.innerHTML;
+      }
+    </script>
   </body>
 </html>
