@@ -135,6 +135,49 @@ $shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 .section-price {
   padding: 5rem 1rem !important;
 }
+
+.blog-card {
+  .blog-card__img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.contact__form {
+  .form-check-input:checked {
+    background-color: $teal;
+    border-color: $teal;
+  }
+}
+
+.contact__send {
+  width: fit-content;
+  &:hover {
+    background: $teal;
+  }
+}
+
+.map {
+  min-height: 50vh;
+}
+
+.contact__adr {
+  position: absolute;
+  left: -2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.social {
+  .social_btn {
+    height: 50px;
+    width: 50px;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
 @media (min-width: 600px) {
   .hero {
     .hero__container {
@@ -173,5 +216,16 @@ $shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
     .row {
       gap: 0 !important;
     }
+  }
+  .map__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+  }
+
+  .contact__adr {
+    position: absolute;
+    left: 0;
   }
 }
