@@ -1,5 +1,10 @@
 $teal: #087f5b;
 $shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+.bg-black {
+  background-color: black;
+}
+
 .hero {
   min-height: 80vh;
 
@@ -100,6 +105,7 @@ $shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 
 .section__title {
   position: relative;
+  z-index: 1;
   &::before {
     width: 70%;
     height: 30%;
@@ -227,5 +233,9 @@ $shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   .contact__adr {
     position: absolute;
     left: 0;
+  }
+
+  .social {
+    margin-top: 0 !important;
   }
 }

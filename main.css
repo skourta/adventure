@@ -1,3 +1,7 @@
+.bg-black {
+  background-color: black;
+}
+
 .hero {
   min-height: 80vh;
   background: rgba(0, 0, 0, 0.5) url("./assets/background.png");
@@ -123,6 +127,7 @@
 
 .section__title {
   position: relative;
+  z-index: 1;
 }
 
 .section__title::before {
@@ -261,6 +266,9 @@
   .contact__adr {
     position: absolute;
     left: 0;
+  }
+  .social {
+    margin-top: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
