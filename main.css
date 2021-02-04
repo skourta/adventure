@@ -109,12 +109,16 @@
           align-items: center;
 }
 
-.carousel-item {
-  padding: 3rem;
-}
-
 .btn-teal {
   background: #087f5b;
+}
+
+.bg-teal {
+  background: #087f5b;
+}
+
+.section__description {
+  margin-bottom: 5rem;
 }
 
 .section__title {
@@ -122,13 +126,47 @@
 }
 
 .section__title::before {
-  width: 50%;
+  width: 70%;
   height: 30%;
   content: " ";
   background: #daeae6;
   position: absolute;
   bottom: 0;
   z-index: -1;
+}
+
+.price-card {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.price-card .price-card__subtitle {
+  font-size: 0.75rem;
+}
+
+.price-card .price-card__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1rem 0;
+}
+
+.price-card:hover {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.price-card:hover .btn-dark {
+  background: #087f5b;
+}
+
+.section-price {
+  padding: 5rem 1rem !important;
 }
 
 @media (min-width: 600px) {
@@ -159,6 +197,12 @@
   .tour-card {
     width: 25vw;
     height: 60vh;
+  }
+  .price-card {
+    width: auto;
+  }
+  .section-price .row {
+    gap: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

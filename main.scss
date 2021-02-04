@@ -1,3 +1,5 @@
+$teal: #087f5b;
+$shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 .hero {
   min-height: 80vh;
 
@@ -49,7 +51,7 @@
   align-items: center;
   justify-content: center;
   &:hover {
-    background-color: #087f5b;
+    background-color: $teal;
   }
 }
 
@@ -61,7 +63,7 @@
   transition: all 0.5s ease;
   margin: 0 auto;
   &:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    box-shadow: $shadow;
   }
   .card-img-top {
     height: 50%;
@@ -84,17 +86,22 @@
   }
 }
 
-.carousel-item {
-  padding: 3rem;
-}
 .btn-teal {
-  background: #087f5b;
+  background: $teal;
+}
+
+.bg-teal {
+  background: $teal;
+}
+
+.section__description {
+  margin-bottom: 5rem;
 }
 
 .section__title {
   position: relative;
   &::before {
-    width: 50%;
+    width: 70%;
     height: 30%;
     content: " ";
     background: #daeae6;
@@ -104,6 +111,30 @@
   }
 }
 
+.price-card {
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  .price-card__subtitle {
+    font-size: 0.75rem;
+  }
+  .price-card__btn {
+    width: fit-content;
+    align-self: center;
+    margin: 1rem 0;
+  }
+
+  &:hover {
+    box-shadow: $shadow;
+    .btn-dark {
+      background: $teal;
+    }
+  }
+}
+
+.section-price {
+  padding: 5rem 1rem !important;
+}
 @media (min-width: 600px) {
   .hero {
     .hero__container {
@@ -134,5 +165,13 @@
   .tour-card {
     width: 25vw;
     height: 60vh;
+  }
+  .price-card {
+    width: auto;
+  }
+  .section-price {
+    .row {
+      gap: 0 !important;
+    }
   }
 }
